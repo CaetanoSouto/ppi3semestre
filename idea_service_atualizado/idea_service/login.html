@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Cliente - IDEA SERVICE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <div class="logo-circle">
+                <span class="logo-icon">ID</span>
+            </div>
+            <div class="logo-text">
+                <h1>IDEA</h1>
+                <span class="subtitle">SERVICE</span>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#servicos">Serviços</a></li>
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#sobre">Sobre</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="botao-acao">
+            <a href="login.html" class="botao active">Área do Cliente</a>
+        </div>
+        <div class="menu-mobile">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Seção de Login/Cadastro -->
+    <section id="login-cadastro">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <div class="tab active" data-tab="login">Login</div>
+                    <div class="tab" data-tab="cadastro">Cadastro</div>
+                </div>
+                
+                <!-- Formulário de Login -->
+                <div class="auth-form login-form active">
+                    <h2>Acesse sua conta</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">E-mail</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="login-email" name="email" placeholder="Seu e-mail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-senha">Senha</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="login-senha" name="senha" placeholder="Sua senha" required>
+                            </div>
+                        </div>
+                        <div class="form-group remember-forgot">
+                            <div class="remember">
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember">Lembrar-me</label>
+                            </div>
+                            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                        </div>
+                        <button type="submit" class="botao primario btn-full">Entrar</button>
+                    </form>
+                    <div class="auth-switch">
+                        <p>Ainda não é cliente? <a href="#" class="switch-to-cadastro">Faça seu cadastro</a></p>
+                    </div>
+                </div>
+                
+                <!-- Formulário de Cadastro -->
+                <div class="auth-form cadastro-form">
+                    <h2>Crie sua conta</h2>
+                    <form id="cadastro-form">
+                        <div class="form-group">
+                            <label for="cadastro-nome">Nome Completo</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="cadastro-nome" name="nome" placeholder="Seu nome completo" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastro-cpf">CPF</label>
+                            <div class="input-icon">
+                                <i class="fas fa-id-card"></i>
+                                <input type="text" id="cadastro-cpf" name="cpf" placeholder="000.000.000-00" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastro-telefone">Telefone</label>
+                            <div class="input-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="cadastro-telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastro-email">E-mail</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="cadastro-email" name="email" placeholder="Seu e-mail" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastro-senha">Senha</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="cadastro-senha" name="senha" placeholder="Crie uma senha" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="cadastro-confirma-senha">Confirmar Senha</label>
+                            <div class="input-icon">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" id="cadastro-confirma-senha" name="confirma-senha" placeholder="Confirme sua senha" required>
+                            </div>
+                        </div>
+                        <div class="form-group terms">
+                            <input type="checkbox" id="termos" name="termos" required>
+                            <label for="termos">Aceito os <a href="#">termos e condições</a> de uso</label>
+                        </div>
+                        <button type="submit" class="botao primario btn-full">Cadastrar</button>
+                    </form>
+                    <div class="auth-switch">
+                        <p>Já tem uma conta? <a href="#" class="switch-to-login">Faça login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-circle small">
+                        <span class="logo-icon small">ID</span>
+                    </div>
+                    <div class="logo-text">
+                        <h3>IDEA</h3>
+                        <span class="subtitle small">SERVICE</span>
+                    </div>
+                </div>
+                <p class="copyright">© 2025 IDEA SERVICE. Todos os direitos reservados.</p>
+                <div class="redes-sociais">
+                    <a href="#" class="rede-social"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="rede-social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="rede-social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/5599310503" class="rede-social"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão flutuante de WhatsApp -->
+    <div class="whatsapp-flutuante">
+        <a href="https://wa.me/5599310503"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+    <!-- JavaScript para alternar entre login e cadastro -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Alternar entre login e cadastro
+            const loginTab = document.querySelector('.tab[data-tab="login"]');
+            const cadastroTab = document.querySelector('.tab[data-tab="cadastro"]');
+            const loginForm = document.querySelector('.login-form');
+            const cadastroForm = document.querySelector('.cadastro-form');
+            const switchToCadastro = document.querySelector('.switch-to-cadastro');
+            const switchToLogin = document.querySelector('.switch-to-login');
+            
+            function showLogin() {
+                loginTab.classList.add('active');
+                cadastroTab.classList.remove('active');
+                loginForm.classList.add('active');
+                cadastroForm.classList.remove('active');
+            }
+            
+            function showCadastro() {
+                cadastroTab.classList.add('active');
+                loginTab.classList.remove('active');
+                cadastroForm.classList.add('active');
+                loginForm.classList.remove('active');
+            }
+            
+            loginTab.addEventListener('click', showLogin);
+            cadastroTab.addEventListener('click', showCadastro);
+            switchToCadastro.addEventListener('click', function(e) {
+                e.preventDefault();
+                showCadastro();
+            });
+            switchToLogin.addEventListener('click', function(e) {
+                e.preventDefault();
+                showLogin();
+            });
+            
+            // Menu mobile
+            const menuButton = document.querySelector('.menu-mobile');
+            const nav = document.querySelector('nav');
+            
+            menuButton.addEventListener('click', function() {
+                nav.classList.toggle('active');
+                menuButton.classList.toggle('active');
+            });
+            
+            // Validação básica de formulário
+            const cadastroFormEl = document.getElementById('cadastro-form');
+            const loginFormEl = document.getElementById('login-form');
+            
+            cadastroFormEl.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const senha = document.getElementById('cadastro-senha').value;
+                const confirmaSenha = document.getElementById('cadastro-confirma-senha').value;
+                
+                if (senha !== confirmaSenha) {
+                    alert('As senhas não coincidem!');
+                    return;
+                }
+                
+                alert('Cadastro realizado com sucesso!');
+                cadastroFormEl.reset();
+                showLogin();
+            });
+            
+            loginFormEl.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Login realizado com sucesso!');
+                loginFormEl.reset();
+            });
+        });
+    </script>
+</body>
+</html>
